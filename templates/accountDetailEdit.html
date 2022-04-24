@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Account Manager</title>
+    <img src="/archive/Logo.png" alt="CrownpassLogo">
+</head>
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+    <button onclick="history.back()">Back</button>
+
+<form method="Post">
+    <label style="font-family: Verdana">Current first name: {{data.firstName}}</label><br>
+    <label style="font-family: Verdana" for="fname">New First Name: </label>
+    <input type="text" id="fname" name="fname"><br>
+    <br>
+
+    <label style="font-family: Verdana">Current Last name: {{data.lastName}}</label><br>
+    <label style="font-family: Verdana" for="lname">New Last Name: </label>
+    <input type="text" id="lname" name="lname"><br>
+    <br>
+    <label style="font-family: Verdana">Current email: {{data.email}}</label><br>
+    <label style="font-family: Verdana" for="email">New email: </label>
+    <input type="text" id="email" name="email"><br>
+    <br>
+    <label style="font-family: Verdana">Current address: {{data.address}}</label><br>
+    <label style="font-family: Verdana" for="address">New address: </label>
+    <input type="text" id="address" name="address"><br>
+    <br>
+    <label style="font-family: Verdana">Current gender: {{data.gender}}</label><br>
+    <label style="font-family: Verdana" for="gender">New gender: </label>
+    <input type="text" id="gender" name="gender"><br>
+    <br>
+    <label style="font-family: Verdana">Current job: {{data.job}}</label><br>
+    <label style="font-family: Verdana" for="job">New job: </label>
+    <input type="text" id="job" name="job"><br>
+    <br>
+    <label style="font-family: Verdana">Current telephone: {{data.telephone}}</label><br>
+    <label style="font-family: Verdana" for="telephone">New telephone: </label>
+    <input type="text" id="telephone" name="telephone"><br>
+    <br>
+    <label style="font-family: Verdana">Current staff: {{data.staff}}</label><br>
+    <label style="font-family: Verdana" for="staff">New staff: </label>
+    <input type="text" id="staff" name="staff"><br>
+
+    <label style="font-family: Verdana">Pressing Submit will require you to re-login</label><br>
+    <input type="submit" value="Submit">
+</form>
+<!---
+<form>
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td>{{data.firstName}}</td>
+          <td><input type="text" id="fname2" name="fname2"><br></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td>{{data.lastName}}</td>
+        <td><input type="text" id="lname2" name="lname2"><br></td>
+      </tr>
+
+         <tr>
+        <td>Address</td>
+        <td>{{data.address}}</td>
+                 <td><input type="text" id="address" name="address"><br></td>
+      </tr>
+         <tr>
+        <td>Email</td>
+        <td>{{data.email}}</td>
+                 <td><input type="text" id="email" name="email"><br></td>
+      </tr>
+         <tr>
+        <td>Gender</td>
+        <td>{{data.gender}}</td>
+                 <td><input type="text" id="gender" name="gender"><br></td>
+      </tr>
+         <tr>
+        <td>Job</td>
+        <td>{{data.job}}</td>
+                 <td><input type="text" id="job" name="job"><br></td>
+      </tr>
+         <tr>
+        <td>Staff Number</td>
+        <td>{{data.staff}}</td>
+                 <td><input type="text" id="staff" name="staff"><br></td>
+      </tr>
+         <tr>
+        <td>telephone</td>
+        <td>{{data.telephone}}</td>
+                 <td><input type="text" id="telephone" name="telephone"><br></td>
+      </tr>
+    </table>
+        <input type="submit" value="Submit">
+</form>
+--->
+</body>
+</html>

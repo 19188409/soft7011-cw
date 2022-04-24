@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Account Manager</title>
+</head>
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+    <button onclick="history.back()">Back</button>
+    <h1 style="font-family: Verdana">User Account Manager</h1>
+    <h  style="font-family: Verdana"> Welcome {{name_string}}!</h>
+    <br>
+    <br>
+    <a  style="font-family: Verdana", href="{{url_for('accountDetailEdit')}}">Edit User Account Details</a>
+<br>
+<table  style="font-family: Verdana">
+  <tr>
+    <td>First Name</td>
+    <td>{{data.firstName}}</td>
+  </tr>
+  <tr>
+    <td>Last Name</td>
+    <td>{{data.lastName}}</td>
+  </tr>
+     <tr>
+    <td>Crownpass ID Number</td>
+    <td>{{data.crownpassID}}</td>
+  </tr>
+     <tr>
+    <td>Address</td>
+    <td>{{data.address}}</td>
+  </tr>
+     <tr>
+    <td>Email</td>
+    <td>{{data.email}}</td>
+  </tr>
+     <tr>
+    <td>Gender</td>
+    <td>{{data.gender}}</td>
+  </tr>
+     <tr>
+    <td>Job</td>
+    <td>{{data.job}}</td>
+  </tr>
+     <tr>
+    <td>Staff Number</td>
+    <td>{{data.staff}}</td>
+  </tr>
+     <tr>
+    <td>telephone</td>
+    <td>{{data.telephone}}</td>
+  </tr>
+     <tr>
+    <td>Password</td>
+    <td>CLASSIFIED</td>
+  </tr>
+</table>
+</body>
+</html>
